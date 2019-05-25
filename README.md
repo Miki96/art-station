@@ -1,4 +1,6 @@
-![Art Station Banner](https://github.com/Miki96/art-station/blob/master/bigLogo.png)
+<p align="center">
+    <img src="https://github.com/Miki96/art-station/blob/master/bigLogo.png">
+</p>
 
 # Art Station
 Art Station is an online platform for creating and sharing artistic sketches directly in browser. 
