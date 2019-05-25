@@ -1,0 +1,54 @@
+Korisnik
+------------------------------------------------------------------------
+// ID - koji se inkrementira sa novim korisnikom
+    K--> id
+    V--> integer {0+}
+------------------------------------------------------------------------
+// Info o korisniku
+    K--> user:{ID}
+    V--> HASH (username, email, password, fname, lname, date, token)
+-------------------------------------------------------------------------
+// Svi id-jevi korisnika
+    K-->  users
+    V--> LIST(id korisnika)
+-------------------------------------------------------------------------
+// Svi tokeni preko kojih uzimamo ID
+    K-->  tokens
+    V-->  HASH (token <-> id)
+-------------------------------------------------------------------------
+// Svi email-ovi preko kojih uzimamo ID
+    K-->  emails
+    V-->  HASH (email <-> id)
+-------------------------------------------------------------------------
+Crtezi
+-------------------------------------------------------------------------
+// drawID - koji se inkrementira sa novim crtezom
+    K--> drawid
+    V--> integer {0+}
+------------------------------------------------------------------------
+// Info o crtezu
+    K-->  drawing:{ID}
+    V--> HASH (title, path, author, likes)
+-------------------------------------------------------------------------
+// Svi id-jevi crteza
+    K-->  wall
+    V--> LIST(id crteza)
+-------------------------------------------------------------------------
+Crtezi i Korisnici
+-------------------------------------------------------------------------
+// Crtezi korisnika
+    K--> author:{ID}
+    V--> LIST(id crteza)
+-------------------------------------------------------------------------
+// Favoriti korisnika -- SKUP
+    K--> loves:{ID}
+    V--> SET(id crteza)
+-------------------------------------------------------------------------
+// Lajkovi korisnika -- SKUP
+    K--> likes:{ID}
+    V--> SET(id crteza)
+-------------------------------------------------------------------------
+// Hejtovi korisnika -- SKUP
+    K--> hates:{ID}
+    V--> SET(id crteza)
+-------------------------------------------------------------------------

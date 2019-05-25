@@ -1,0 +1,26 @@
+// restart redis
+sudo service redis-server restart
+
+// start cli 
+redis-cli 
+
+// stop redis
+sudo service redis-server stop
+
+// multer file object structure
+{
+    "fieldname": "avatar",
+    "originalname": "somefile.pdf",
+    "encoding": "7bit",
+    "mimetype": "application/pdf",
+    "destination": "./uploads",
+    "filename": "36db44e11b83f4513188f649ff445a2f",
+    "path": "uploads\\36db44e11b83f4513188f649ff445a2f",
+    "size": 1277191
+}
+
+// call method from parent component in vue
+this.$parent.someMethod();
+
+// build project
+npm run build
