@@ -32,7 +32,7 @@ Then, install all required dependencies by running the following command in the 
 npm install
 ```
 
-Finnaly, in the same directory, start the Node.js server with:
+Finally, in the same directory, start the Node.js server with:
 ```console
 node server.js
 ```
