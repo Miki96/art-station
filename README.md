@@ -10,6 +10,8 @@ Art Station is an online platform for creating and sharing artistic sketches dir
 - Like/Dislike system
 - Profile page with basic info and user sketches
 
+![Drawing](drawing.gif)
+
 ## Requirements
 #### Back End
 - redis-cli
